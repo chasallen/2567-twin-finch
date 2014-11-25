@@ -7,10 +7,18 @@
   box-sizing: border-box;
 }
 
+/*body style*/
+body {
+	background:yellow;
+	width:100%;
+	margin:0;
+}
+
 /*hero space style*/
 .hero-space {
 	width:100%;
-  	height: 400px;
+  	height: 600px;
+	background:url(http://lorempixel.com/g/400/400/) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -19,6 +27,7 @@
 }
 .overlay1 {
 	width:20%;
+	margin-top:40px;
 	margin-right:100px;
 }
 .overlay2 {
@@ -27,13 +36,27 @@
 }
 
 /*sticky for the navigation*/
-.sticky {  
-    position: fixed;  
-    width: 100%;  
-    left: 0;  
-    top: 0;  
-    z-index: 100;  
-    border-top: 0;  
+header {
+	/*background: gray;*/
+	position: fixed;
+	width: 100%;
+	top: 0; 
+}
+
+/*for logo image in navigation*/
+header img {
+	width:auto;
+}
+h1 {
+	text-align: center;
+	display: block;
+	margin-top: 0;
+}
+
+/*Styling Navigation Links--Used to move buttons to left or right*/
+li {
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 /*This colors the background pink for desktop size*/
@@ -52,7 +75,6 @@
   float: left;
   padding-right: 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
 }
 [class*='column-']:last-of-type {
 /*This takes the padding off the last column*/
@@ -170,6 +192,12 @@ img {
 	margin: 0 auto;
 }
 
+ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
 /*The medium query for the mobile breakpoint*/
 @media only screen and (max-width: 700px) {
 /*Makes columns 100% of the screen mobile size*/
@@ -188,24 +216,4 @@ img {
   }
 }
 
-/*jquery for sticky navigation*/
-$(document).ready(function() {  
-var stickyNavTop = $('.nav').offset().top;  
-  
-var stickyNav = function(){  
-var scrollTop = $(window).scrollTop();  
-       
-if (scrollTop > stickyNavTop) {   
-    $('.nav').addClass('sticky');  
-} else {  
-    $('.nav').removeClass('sticky');   
-}  
-};  
-  
-stickyNav();  
-  
-$(window).scroll(function() {  
-    stickyNav();  
-});  
-});	
 
