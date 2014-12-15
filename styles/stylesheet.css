@@ -22,9 +22,11 @@ body {
 	background-size:100%;
   	background-position:center;
 }
+
 .hero img {
   width:auto;
 }
+
 .text-overlay {
 	width:20%;
 	margin-top:300px;
@@ -46,6 +48,7 @@ header {
 header img {
 	width:auto;
 }
+
 h1 {
 	text-align: center;
 	display: block;
@@ -58,6 +61,7 @@ h2 {
 	font-size:25pt;
 	color: #60493a;
 }
+
 .logo-style {
 	max-height: 150px;
 }
@@ -85,6 +89,7 @@ li {
   padding-right: 20px;
   margin-bottom: 20px;
 }
+
 [class*='column-']:last-of-type {
 /*This takes the padding off the last column*/
   padding-right: 0;
@@ -94,6 +99,7 @@ li {
 /*This gives the nested grids padding on the left and right*/
   padding: 0 25px;
 }
+
 .grid .grid {
 /*Gives negative margins so it aligns with whatever container it's inside of; it also gives 25px padding at the bottom*/
   margin : 0 -25px 25px;
@@ -265,12 +271,15 @@ footer {
 .clearfix {
 	clear:both;
 }
+
 .left {
 	float:left;
 }
+
 .right {
 	float:right;
 }
+
 .center {
 	float:none;
 	margin: 0 auto;
@@ -295,6 +304,7 @@ ul {
   .grid {
 	  /*background: yellow;*/
   }
+ 
 /*creates two column for mobile*/
   .column-mobile {
 	width:100%;
@@ -315,6 +325,7 @@ ul {
 	margin-right:40px;
 	padding-left:80px;
 }
+
    .address-mobile {
 		margin-top:20px;
 }
