@@ -125,7 +125,7 @@ img {
   opacity: .7;
   border-radius: 25px;
   text-align:center;
-  vertical-align:center;
+  vertical-align:bottom;
 }
 
 .buttonStyle {
@@ -139,7 +139,7 @@ img {
   opacity: .7;
   border-radius: 15px;
   text-align:center;
-  vertical-align:center;
+  vertical-align:bottom;
 }
  
 a {
@@ -301,13 +301,13 @@ ul {
 	margin:0;
 	padding-left:40px;
 	padding-right:40px;
-  }
+}
   
   .navigation-mobile {
 	width:20%;
 	padding-left:0;
 	margin:0; 
-  }
+}
   
   .text-overlay-mobile {
 	width:100%;
@@ -331,16 +331,5 @@ ul {
 
  	.navigation {
 	display:none;	 
- }
-
-	.top-margin {
-	margin-top:20px;
 }
 
-	.texture-mobile {
-	background-image:url("../images/coffee-girl.jpg");
-	background-size:100%;
-  	background-position:center;
-	overflow:auto;
-	padding:10px;
-}
