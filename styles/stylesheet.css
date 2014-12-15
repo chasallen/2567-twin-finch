@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* CSS Document */
+/*this is to keep all borders contained without overlapping, collapsing*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*body style*/
+body {
+	background:url("../images/burlap-pattern.jpg") repeat;
+	width:100%;
+	margin:0;
+}
+
+/*hero space style*/
+.hero-space {
+	width:100%;
+  	height: 600px;
+	background-image:url("../images/roaster.jpg");
+	background-size:100%;
+  	background-position:center;
+}
+.hero img {
+  width:auto;
+}
+.text-overlay {
+	width:20%;
+	margin-top:300px;
+	margin-right:100px;
+	font-family: 'Lato', sans-serif;
+	color:#fff;
+}
+
+/*sticky for the navigation*/
+header {
+	/*background: gray;*/
+	position: fixed;
+	width: 100%;
+	top: 0;
+	font-family: 'Kaushan Script', cursive;
+}
+
+/*for logo image in navigation*/
+header img {
+	width:auto;
+}
+h1 {
+	text-align: center;
+	display: block;
+	margin-top: 0;
+	padding-top: 0px;
+}
+
+h2 {
+	font-family: 'Kaushan Script', cursive;
+	font-size:25pt;
+	color: #60493a;
+}
+.logo-style {
+	max-height: 150px;
+}
+
+/*Styling Navigation Links--Used to move buttons to left or right*/
+li {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*This colors the background pink for desktop size*/
+.grid {
+  /*background-color: pink;*/
+}
+.grid:after {
+  /*This is making the grid expand to contain the floated columns*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
+/*I am not sure what this does... it floats all columns left, adds border and pads the column on the right side*/
+  float: left;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+[class*='column-']:last-of-type {
+/*This takes the padding off the last column*/
+  padding-right: 0;
+}
+
+.grid .grid [class*='column-'] {
+/*This gives the nested grids padding on the left and right*/
+  padding: 0 25px;
+}
+.grid .grid {
+/*Gives negative margins so it aligns with whatever container it's inside of; it also gives 25px padding at the bottom*/
+  margin : 0 -25px 25px;
+}
+
+.wrapper {
+	max-width:960px;
+	margin:0 auto;
+}
+
+img {
+/*keeps images 100% of their parent*/
+	width:100%;
+}
+
+.small {
+/*footer stuff*/
+	Margin-left:50px;
+}
+
+/*buttons*/
+
+.buttonText {
+  font: 18px/1.5 'Kaushan Script', cursive;
+  color: #fff;
+  padding-left:10px;
+  padding-right:10px;
+  background-color:#9e785b;
+  opacity: .7;
+  border-radius: 25px;
+  text-align:center;
+  vertical-align:center;
+}
+
+.buttonStyle {
+  font: 20px/1.5 'Kaushan Script', cursive;
+  color: #fff;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:4px;
+  padding-bottom:4px;
+  background-color:#9e785b;
+  opacity: .7;
+  border-radius: 15px;
+  text-align:center;
+  vertical-align:center;
+}
+ 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.light-brown-text {
+	color: #9d785b;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.lato-text {
+	font-family: 'Lato', sans-serif;
+}
+
+.top-margin {
+	margin-top:100px;
+}
+
+.top-margin-short {
+	margin-top:20px;
+}
+
+.texture {
+	background-image:url("../images/coffee-girl.jpg");
+	background-size:100%;
+  	background-position:center;
+	overflow:auto;
+	padding:30px;
+}
+
+footer {
+	background-color:#60493a;
+	opacity:.7;
+	height:50px;
+	width:100%;
+	padding-left:212px;
+	padding-top:15px;
+}
+
+
+/*All the below creates width for the grided areas*/
+.column-1-12 {
+  width: 8.33%;
+}
+.column-2-12 {
+  width: 16.66%;
+}
+.column-3-12 {
+  width: 25%;
+}
+.column-4-12 {
+  width: 33.33%;
+}
+.column-5-12 {
+  width: 41.66%;
+}
+.column-6-12 {
+  width: 50%;
+}
+.column-7-12 {
+  width: 58.33%;
+}
+.column-8-12 {
+  width: 66.66%;
+}
+.column-9-12 {
+  width: 75%;
+}
+.column-10-12 {
+  width: 83.33%;
+}
+.column-11-12 {
+  width: 91.66%;
+}
+.column-12-12 {
+  width: 100%;
+}
+
+/*offset using margin-left to create spaces between the grided cells*/
+.offset-1-12 {
+  margin-left: 8.33%;
+}
+.offset-2-12 {
+  margin-left: 16.66%;
+}
+.offset-3-12 {
+  margin-left: 25%;
+}
+.offset-4-12 {
+  margin-left: 33.33%;
+}
+.offset-5-12 {
+  margin-left: 41.66%;
+}
+.offset-6-12 {
+  margin-left: 50%;
+}
+.offset-7-12 {
+  margin-left: 58.33%;
+}
+.offset-8-12 {
+  margin-left: 66.66%;
+}
+.offset-9-12 {
+  margin-left: 75%;
+}
+.offset-10-12 {
+  margin-left: 83.33%;
+}
+.offset-11-12 {
+  margin-left: 91.66%;
+}
+.offset-12-12 {
+  margin-left: 100%;
+}
+
+/*helper classes clear fix, float left, float right, center*/
+.clearfix {
+	clear:both;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.center {
+	float:none;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+/*The medium query for the mobile breakpoint*/
+@media only screen and (max-width: 700px) {
+/*Makes columns 100% of the screen mobile size*/
+  [class*='column-'] {
+    width: 100%;
+	/*background:gray;*/
+	padding-right:0;
+  }
+ 
+ /*Changes the color of the background when it breaks to mobile size*/ 
+  .grid {
+	  /*background: yellow;*/
+  }
+/*creates two column for mobile*/
+  .column-mobile {
+	width:100%;
+	margin:0;
+	padding-left:40px;
+	padding-right:40px;
+  }
+  
+  .navigation-mobile {
+	width:20%;
+	padding-left:0;
+	margin:0; 
+  }
+  
+  .text-overlay-mobile {
+	width:100%;
+	margin-top:150px;
+	margin-right:40px;
+	padding-left:80px;
+}
+   .address-mobile {
+		margin-top:20px;
+}
+
+   .image-mobile {
+	   margin-top:20px;
+}
+
+   .logo-mobile {
+	text-align: right;
+	display: block;
+	margin-top: 0;
+}
+
+ 	.navigation {
+	display:none;	 
+ }
+
+	.top-margin {
+	margin-top:20px;
+}
+
+	.texture-mobile {
+	background-image:url("../images/coffee-girl.jpg");
+	background-size:100%;
+  	background-position:center;
+	overflow:auto;
+	padding:10px;
+}
