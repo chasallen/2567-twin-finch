@@ -1,11 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+
 /*this is to keep all borders contained without overlapping, collapsing*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 /*body style*/
 body {
@@ -18,7 +24,7 @@ body {
 .hero-space {
 	width:100%;
   	height: 600px;
-	background-image:url("../images/roaster.jpg");
+	background:url("../images/roaster.jpg") no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -174,7 +180,7 @@ a {
 }
 
 .texture {
-	background-image:url("../images/coffee-girl.jpg");
+	background:url("../images/coffee-girl.jpg") no-repeat;
 	background-size:100%;
   	background-position:center;
 	overflow:auto;
@@ -344,3 +350,17 @@ ul {
 	display:none;	 
 }
 
+	.brown-text-mobile {
+	color: #9d785b;
+}
+
+	.hero-space {
+		display: none;
+}
+
+	.texture {
+		display:none;
+}
+	.icons {
+		max-width:50px;
+}
